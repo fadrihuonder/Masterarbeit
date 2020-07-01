@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Onshape-CAD: Diagnose</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="shortcut icon" href="../../fDiverses/favicon.ico">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+
+<body>
+  <!--<script src="script.js" charset="utf-8"></script>-->
+
+  <div class="AppBar">
+    <a class="AppBarIcon" href="../../index.html"><i id="menu" class="material-icons">menu</i></a>
+    <a class="AppBarLink" href="../aMenu/page.html">Diagnose</a>
+  </div>
+
+  <div class="Problembox">
+    <div class="ProblemTitelBox">
+      <p class="ProblemTitel">Eine Skizze ist im Arbeitsbereich nicht mehr sichtbar</p>
+    </div>
+    <div class="ProblemTextBox">
+      <p class="ProblemText">Die Skizzenelemente einer Skizze (Linien etc.) werden im Arbeitsbereich nicht mehr angezeigt.</p>
+      <p class="ProblemText">Gleichzeitig ist die Skizze aber noch in der Feature-Liste aufgeführt.</p>    </div>
+  </div>
+
+  <div class="VariantenBox" id="VariantenBox1">
+    <div class="FehlerTitelBox">
+      <p class="FehlerTitel">> Fehler:</p>
+      <p class="FehlerUntertitel">Die Skizze wurde automatisch ausgeblendet.</p>
+    </div>
+    <div class="FaltBox" id="FaltBox1">
+      <div class="FehlerTextBox">
+        <p class="FehlerText">Wahrscheinlich hast du gerade eben ein Feature auf Basis der verschwundenen Skizze erzeugt.</p>
+        <p class="FehlerText">Nachdem eine Skizze in einem Feature referenziert worden ist, blendet Onshape die Skizze immer automatisch aus. Sie wird dann auch in der Feature-Liste nur noch grau angezeigt.</p>
+      </div>
+      <div class="Uebergang">
+        <i id="arrow" class="material-icons">arrow_downward</i>
+      </div>
+      <div class="LösungsTitelBox">
+        <p class="LösungsTitel">> Lösung:</p>
+      </div>
+      <div class="LösungsUntertitelBox">
+        <p class="LösungsUntertitel">Skizze wieder einblenden</p>
+      </div>
+      <div class="LösungsTextBox">
+        <p class="LösungsText">Suche die Skizze in der Feature-Liste und fahre mit dem Mauszeiger darüber.</p>
+        <p class="LösungsText">Dadurch erscheint rechts ein Symbol mit einem durchgestrichenen Auge: Klicke auf das Symbol!</p>
+        <img src="pics/1.gif" alt="Bild konnte nicht geladen werden.">
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>

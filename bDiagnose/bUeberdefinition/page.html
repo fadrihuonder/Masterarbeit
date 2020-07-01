@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Onshape-CAD: Diagnose</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="shortcut icon" href="../../fDiverses/favicon.ico">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+
+<body>
+  <!--<script src="script.js" charset="utf-8"></script>-->
+
+  <div class="AppBar">
+    <a class="AppBarIcon" href="../../index.html"><i id="menu" class="material-icons">menu</i></a>
+    <a class="AppBarLink" href="../aMenu/page.html">Diagnose</a>
+  </div>
+
+  <div class="Problembox">
+    <div class="ProblemTitelBox">
+      <p class="ProblemTitel">Skizzenelemente werden rot angezeigt</p>
+    </div>
+    <div class="ProblemTextBox">
+      <p class="ProblemText">Bei geöffneter Skizze werden Skizzenelemente (Linien) rot markiert, zudem werden einige Zwangsbedingungen rot angezeigt.</p>
+      <p class="ProblemText">Wenn du die Skizze schliesst, ist sie in der Feature-Liste rot markiert.</p>
+    </div>
+  </div>
+
+  <div class="VariantenBox" id="VariantenBox1">
+    <div class="FehlerTitelBox">
+      <p class="FehlerTitel">> Fehler:</p>
+      <p class="FehlerUntertitel">Die Skizze ist überdefiniert</p>
+    </div>
+    <div class="FaltBox" id="FaltBox1">
+      <div class="FehlerTextBox">
+        <p class="FehlerText">Der Fehler besteht wahrscheinlich darin, dass du deiner Skizze widersprüchliche Bemassungen und/oder Zwangsbedingungen hinzugefügt hast. Es gibt keine eindeutige Geometrie und Onshape kann deshalb die Skizze nicht richtig auflösen.</p>
+        <p class="FehlerText">Bsp:</p>
+        <img src="pics/1.png" alt="Bild konnte nicht geladen werden.">
+        <p class="FehlerText">Im oben gezeigten Beispiel werden alle vertikalen Linien mit Zwangsbedingungen in diese vertikale Ausrichtung gezwungen.</p>
+        <p class="FehlerText">Die Bemassung der oberen drei horizontalen Linien passt in diesem Zusammenhang nicht mit der Bemassung der unteren horizontalen Linie.</p>
+        <p class="FehlerText">(25mm + 40mm + 30mm = 95mm)</p>
+      </div>
+      <div class="Uebergang">
+        <i id="arrow" class="material-icons">arrow_downward</i>
+      </div>
+      <div class="LösungsTitelBox">
+        <p class="LösungsTitel">> Lösung:</p>
+      </div>
+      <div class="LösungsUntertitelBox">
+        <p class="LösungsUntertitel">Fehlerhafte Angaben löschen</p>
+      </div>
+      <div class="LösungsTextBox">
+        <p class="LösungsText">Entscheide, ob die Bemassungen oder die Zwangsbedingungen nicht deiner gewünschten Geometrie entsprechen.</p>
+        <p class="LösungsText">Lösche die störenden Angaben, also eine (oder mehrere) Bemassung oder Zwangsbedingung.</p>
+        <img src="pics/2.gif" alt="Bild konnte nicht geladen werden.">
+
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>

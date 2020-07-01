@@ -1,0 +1,79 @@
+/* Tag slectors */
+
+body {
+  background-image: linear-gradient(90deg, #186CCF, #0D45AB 61%, #0A3AA1);
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+}
+
+div {
+  margin: 0;
+  border:0;
+  padding: 0;
+}
+
+p {
+  margin: 0;
+  border:0;
+  padding: 0;
+}
+
+a {
+  color: #a8df65;
+}
+
+/* Class selectors */
+
+.AppBar {
+  height: 96px;
+}
+.AppBarLink {
+  font-size: 36px;
+  color: white;
+  display: inline-block;
+  position: relative;
+  bottom: 36px;
+  left: 20px;
+}
+
+.BoxLink {
+  color: white;
+  text-decoration: none;
+}
+
+.MenuTitelBox {
+  margin: 100px 1% 150px;
+  padding: 20px;
+}
+.MenuTitel {
+  font-size: 6em;
+}
+
+.Problembox {
+  border: solid white 3px;
+  padding: 20px 5px 20px 5px;
+  margin: 40px 1%;
+}
+
+/*
+.ProblemTitelBox {
+}
+*/
+
+.ProblemTitel {
+  font-size: 3.5em;
+}
+
+.ProblemTextBox {
+  margin: 30px 10px 10px 10px;
+}
+.ProblemText {
+  font-size: 1em;
+}
+
+/* Id selectors */
+#menu {
+  font-size: 6em;
+  color: white;
+  padding-left: 0;
+}

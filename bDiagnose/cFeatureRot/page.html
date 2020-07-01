@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Onshape-CAD: Diagnose</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="shortcut icon" href="../../fDiverses/favicon.ico">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+
+<body>
+  <script src="script.js" charset="utf-8"></script>
+
+  <div class="AppBar">
+    <a class="AppBarIcon" href="../../index.html"><i id="menu" class="material-icons">menu</i></a>
+    <a class="AppBarLink" href="../aMenu/page.html">Diagnose</a>
+  </div>
+
+  <div class="Problembox">
+    <div class="ProblemTitelBox">
+      <p class="ProblemTitel">Features werden in der Feature-Liste rot markiert</p>
+    </div>
+    <div class="ProblemTextBox">
+      <p class="ProblemText">Ein Feature (z.B. Linear austragen) wird in der Feature-Liste rot markiert.</p>
+      <p class="ProblemText">Zudem wird es im Modell nicht umgesetzt.</p>
+    </div>
+  </div>
+
+  <div class="VariantenBox" id="VariantenBox1">
+    <div class="FehlerTitelBox">
+      <p class="FehlerTitel">> Fehler, Möglichkeit 1:</p>
+      <p class="FehlerUntertitel">Das Feature wurde falsch konfiguriert</p>
+    </div>
+    <div class="FaltBox" id="FaltBox1">
+      <div class="FehlerTextBox">
+        <p class="FehlerText">Ein Fehler könnte sein, dass du bei der Konfiguration des Features einen Fehler gemacht hast.</p>
+        <p class="FehlerText"></p>
+      </div>
+      <div class="Uebergang">
+        <i id="arrow" class="material-icons">arrow_downward</i>
+      </div>
+      <div class="LösungsTitelBox">
+        <p class="LösungsTitel">> Lösung:</p>
+      </div>
+      <div class="LösungsUntertitelBox">
+        <p class="LösungsUntertitel">Veränderungen rückgängig machen</p>
+      </div>
+      <div class="LösungsTextBox">
+        <p class="LösungsText">Prüfe nach, ob du alle notwendigen Schritte korrekt ausgeführt hast.</p>
+        <p class="LösungsText">Suche dafür im Bereich <a href="../../cAnleitungen/aMenu/page.html">Anleitungen</a> die Anleitung für das gewünschte Feature.</p>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="VariantenBox" id="VariantenBox2">
+    <div class="FehlerTitelBox">
+      <p class="FehlerTitel">> Fehler, Möglichkeit 2:</p>
+      <p class="FehlerUntertitel">Veränderung an übergeordneten Feature</p>
+    </div>
+    <div class="FaltBox" id="FaltBox2">
+      <div class="FehlerTextBox">
+        <p class="FehlerText">Dein Feature bezieht sich auf vorausgehende Features (z.B. eine frühere Skizze) oder einzelne Instanzen solcher Features. Ein möglicher Fehler besteht darin, dass du weiter oben in der Feature-Liste etwas verändert hast.
+        </p>
+        <p class="FehlerText">Das führt dazu, dass für das gestörte Feature wichtige Bezugsgrösse verändert oder gelöscht wurden: Das Feature kann nicht mehr aufelöst, berechnet und dargestellt werden.</p>
+      </div>
+      <div class="Uebergang">
+        <i id="arrow" class="material-icons">arrow_downward</i>
+      </div>
+      <div class="LösungsTitelBox">
+        <p class="LösungsTitel">> Lösung:</p>
+      </div>
+      <div class="LösungsUntertitelBox">
+        <p class="LösungsUntertitel">Veränderungen rückgängig machen</p>
+      </div>
+      <div class="LösungsTextBox">
+        <p class="LösungsText">Führe das übergeordnete Feature wieder in den alten Zustand zurück.</p>
+        <p class="LösungsText">Am einfachsten gelingt das dir das mit dem "Rückgängig"-Pfeil oben links.</p>
+        <img src="pics/1.png" alt="Bild konnte nicht geladen werden.">
+      </div>
+      <div class="LösungsUntertitelBox">
+        <p class="LösungsUntertitel">Feature anpassen</p>
+      </div>
+      <div class="LösungsTextBox">
+        <p class="LösungsText">Du kannst das gestörte Feature auch an die neuen Umstände anpassen: Mit einem Doppelklick auf das Feature (in der Feature-Liste) erscheint wieder das übliche Dialogfeld des Features.</p>
+        <p class="LösungsText"></p>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>

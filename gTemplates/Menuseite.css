@@ -1,0 +1,59 @@
+/* Tag slectors */
+
+body {
+  background-image: linear-gradient(90deg, #186CCF, #0D45AB 61%, #0A3AA1);
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+}
+
+div {
+  margin: 0;
+  border:0;
+  padding: 0;
+}
+
+p {
+  margin: 0;
+  border:0;
+  padding: 0;
+}
+
+a {
+  color: #a8df65;
+}
+
+/* Class selectors */
+
+.MenuTitelBox {
+  margin: 100px 1% 150px;
+  padding: 20px;
+}
+.MenuTitel {
+  font-size: 6em;
+}
+
+.TippBox {
+  border: solid white 3px;
+  padding: 20px 5px 20px 5px;
+  margin: 40px 1%;
+}
+
+.TippTitelBox {
+}
+.TippTitel {
+  font-size: 3.5em;
+}
+
+.TippTextBox {
+  margin: 30px 10px 10px 10px;
+}
+.TippText {
+  font-size: 1em;
+}
+
+/* Id selectors */
+#menu {
+  font-size: 6em;
+  color: white;
+  padding-left: 0;
+}

@@ -1,0 +1,93 @@
+/* Tag slectors */
+
+body {
+  background-image: linear-gradient(90deg, #186CCF, #0D45AB 61%, #0A3AA1);
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+}
+
+div {
+  margin: 0;
+  border:0;
+  padding: 0;
+}
+
+p {
+  margin: 0;
+  border:0;
+  padding: 0;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  display: inline;
+}
+
+/* Class selectors */
+
+.AppBar {
+  height: 96px;
+}
+.AppBarLink {
+  font-size: 36px;
+  color: white;
+  display: inline-block;
+  position: relative;
+  bottom: 36px;
+  left: 20px;
+  text-decoration: underline;
+}
+
+.MenuTitelBox {
+  margin: 100px 1% 150px;
+  padding: 20px;
+}
+.MenuTitel {
+  font-size: 6em;
+}
+
+.KategorieBox {
+  border: solid white 3px;
+  padding: 20px 5px 20px 20px;
+  margin: 60px 1% 0 1%;
+}
+.KategorieTitel {
+  font-size: 4em;
+}
+
+.FaltBox {
+margin: 0 0 0 40px;
+}
+
+.WerkzeugBox {
+  margin: 60px 0 0 0;
+}
+.Werkzeug {
+  font-size: 3em;
+}
+
+.BeschriebBox {
+  margin: 15px 0 0 55px;
+  color: lightgrey;
+}
+.Beschrieb {
+  font-size: 1em;
+}
+
+.AlternativMenu {
+  margin-top: 150px;
+  text-align: center;
+}
+.UnderlineLink {
+  color: grey;
+  text-decoration: underline;
+}
+
+/* Id selectors */
+
+#menu {
+  font-size: 6em;
+  color: white;
+  padding-left: 0;
+}
